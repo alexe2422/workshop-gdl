@@ -96,10 +96,10 @@ int leerfile(char* buffer, int sock) {
 
 int main() {
 
-  initW32(); /* Necesaria para compilar en Windows */
-  int fd, fd2; /* los descriptores de archivos */
-  struct sockaddr_in server; /* para la información de la dirección del servidor */
-  struct sockaddr_in client;/* para la información de la dirección del cliente */
+  initW32(); 
+  int fd, fd2; 
+  struct sockaddr_in server; 
+  struct sockaddr_in client;
 
   unsigned int sin_size;
 
@@ -143,5 +143,5 @@ int main() {
     /* que enviará el mensaje de bienvenida al cliente */
     doprocessing(fd2);
 
-  } /* end while */
+  } 
 }
